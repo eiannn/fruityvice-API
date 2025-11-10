@@ -26,7 +26,7 @@ if (isset($_GET['logout'])) {
     exit;
 }
 
-// mga logic
+// mga logic brooo
 $pageTitle = "All Fruits";
 $searchQuery = "";
 $fruits = [];
@@ -215,7 +215,7 @@ try {
     }
 }
 
-// FALLBACK DATA - In case API fails, use sample data
+// mao ni FALLBACKkkk na DATAaa - n case na  API failsss bro, gamita ang sample dataaa! ya
 if (empty($fruits) && empty($error)) {
     $fruits = [
         [
@@ -283,7 +283,7 @@ if (empty($fruits) && !empty($searchQuery)) {
     $error = "No fruits available in the database";
 }
 
-// Debug: Check what we have
+// mao ni mo Checkkk sa debug
 error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
 ?>
 <!DOCTYPE html>
@@ -298,18 +298,18 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- Mobile Menu Toggle -->
+<!-- selpon togglee ya -->
 <button class="mobile-menu-toggle">
     <i class="fas fa-bars"></i>
 </button>
 
-<!-- Mobile Overlay -->
+<!-- selpon overley ya -->
 <div class="mobile-overlay"></div>
 <body class="bg-dark text-light">
-    <!-- Scroll Progress Bar -->
+    <!-- Scrollll Progresssss Barrr ya -->
     <div class="scroll-progress"></div>
 
-    <!-- Modern Navigation Bar -->
+    <!-- MMModernnn NNNNavigation Barrr ya -->
     <div class="nav-container">
         <nav>
             <div class="logo">
@@ -356,14 +356,14 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
         </nav>
     </div>
 
-    <!-- Main Content -->
+    <!-- mao ni Mainnnn Contentttt ya -->
     <main class="main-container">
         <div class="container-fluid">
             <div class="row">
-                <!-- Main Content Area -->
+                
                 <div class="col-12">
                     <div class="content-wrapper">
-                        <!-- Page Header -->
+                        
                         <div class="page-header">
                             <div class="header-content">
                                 <div class="header-text">
@@ -393,7 +393,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
                             </div>
                         </div>
 
-                        <!-- Error Message -->
+                        <!-- mali na Messageee  -->
                         <?php if (isset($error)): ?>
                             <div class="error-alert">
                                 <div class="alert-content">
@@ -406,7 +406,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
                             </div>
                         <?php endif; ?>
 
-                        <!-- Fruit Grid -->
+                        <!-- Fruitas Griiiid -->
                         <div id="fruitGrid" class="<?php echo $showOnlySelected && !empty($selectedFruit) ? 'single-fruit-view' : 'fruits-grid'; ?>">
                             <?php if (isset($fruits) && is_array($fruits) && !empty($fruits)): ?>
                                 <?php foreach($fruits as $index => $fruit): ?>
@@ -483,7 +483,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
                                     </div>
                                 <?php endforeach; ?>
                             <?php elseif (!isset($error)): ?>
-                                <!-- Empty State -->
+                                <!-- way sulod na Stateee ya -->
                                 <div class="empty-state">
                                     <div class="empty-icon">
                                         <i class="fas fa-fruit-watermelon"></i>
@@ -502,7 +502,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Foooooter -->
     <footer class="professional-footer">
         <div class="container">
             <div class="footer-content">
@@ -521,7 +521,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
         </div>
     </footer>
 
-    <!-- Back to Top Button - FIXED WITH ARROW ICON -->
+    <!-- wala nani labot ya -->
     <div class="back-to-top">
         <i class="fas fa-chevron-up"></i>
     </div>
@@ -536,7 +536,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
             window.location.href = '?category=all';
         }
         
-        // Scroll progress bar
+        // Scrollll progresss ya
         window.addEventListener('scroll', function() {
             const winHeight = window.innerHeight;
             const docHeight = document.documentElement.scrollHeight;
@@ -544,7 +544,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
             const scrollPercent = (scrollTop) / (docHeight - winHeight) * 100;
             document.querySelector('.scroll-progress').style.width = scrollPercent + '%';
             
-            // Show/hide back to top button
+            // Showww/hideee backkk ttto tttop buttonnnn ya
             const backToTop = document.querySelector('.back-to-top');
             if (scrollTop > 300) {
                 backToTop.classList.add('visible');
@@ -553,7 +553,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
             }
         });
         
-        // Back to top functionality
+        // Backkkk ttto tooop functionalityyyyy
         document.querySelector('.back-to-top').addEventListener('click', function() {
             window.scrollTo({
                 top: 0,
@@ -561,7 +561,7 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
             });
         });
         
-        // Animate cards on load
+        // Aniiimateee na ccards on looooad ya
         document.addEventListener('DOMContentLoaded', function() {
             const cards = document.querySelectorAll('.fruit-card');
             cards.forEach((card, index) => {
@@ -574,3 +574,4 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
 </body>
 
 </html>
+
