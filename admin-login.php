@@ -447,7 +447,7 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
                         <?php endif; ?>
                         
                         <small class="text-muted">
-                            <i class="fas fa-shield-alt me-1"></i>
+                            
                             
                         </small>
                     </div>
@@ -578,3 +578,4 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
 </body>
 
 </html>
+
