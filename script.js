@@ -1,4 +1,4 @@
-// Professional FruitInfo JavaScript
+// Propessionallll FruitasInforr ya
 document.addEventListener('DOMContentLoaded', function() {
     console.log('FruitInfo: Initializing professional application...');
     initApp();
@@ -14,7 +14,7 @@ function initApp() {
 }
 
 function setupEventListeners() {
-    // Search form submission
+    // dire ka maka serch ug formmm submissssion ya
     const searchForm = document.getElementById('searchForm');
     if (searchForm) {
         searchForm.addEventListener('submit', function(e) {
@@ -31,7 +31,7 @@ function setupEventListeners() {
         });
     }
     
-    // Navigation buttons loading state
+    // Navvvv na buttons loadingggg sssstatteee
     const navButtons = document.querySelectorAll('.nav-btn');
     navButtons.forEach(button => {
         button.addEventListener('click', function(e) {
@@ -124,7 +124,7 @@ function initFruitGridAnimations() {
 }
 
 function createScrollProgressBar() {
-    // Progress bar is already in HTML
+    // mao ni pragggress barrrr ya na is alreadyyyy  na naa na sa HTML ya
 }
 
 function updateProgressBar() {
@@ -175,7 +175,7 @@ function showLoadingState() {
     }
 }
 
-// Utility function to throttle scroll events
+// Utiiilityyyy fuuuunctionnnn ttto throooottleee sssscroll eventsss ya
 function throttle(func, limit) {
     let inThrottle;
     return function() {
@@ -189,11 +189,11 @@ function throttle(func, limit) {
     }
 }
 
-// Make functions globally available
+// maka himo ug punctions tibook kalibotan avelableeee
 window.selectFruit = selectFruit;
 window.showAllFruits = showAllFruits;
 
-// Mobile menu functionality
+// selpon meno punctionality
 const mobileToggle = document.querySelector('.mobile-menu-toggle');
 const navContainer = document.querySelector('.nav-container');
 const mobileOverlay = document.querySelector('.mobile-overlay');
@@ -209,5 +209,6 @@ if (mobileToggle && navContainer && mobileOverlay) {
         mobileOverlay.classList.remove('active');
     });
 }
+
 
 
