@@ -494,31 +494,31 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
                 number: false
             };
 
-            // Length requirement
+            // Lengthhhh requirementttttt
             if (password.length >= 6) {
                 strength += 25;
                 requirementsMet.length = true;
             }
 
-            // Uppercase requirement
+            // UUUUppercase requirementttt
             if (/[A-Z]/.test(password)) {
                 strength += 25;
                 requirementsMet.uppercase = true;
             }
 
-            // Lowercase requirement
+            // LLLowercaseee requirementttt
             if (/[a-z]/.test(password)) {
                 strength += 25;
                 requirementsMet.lowercase = true;
             }
 
-            // Number requirement
+            // numero sa requirementtt ya
             if (/[0-9]/.test(password)) {
                 strength += 25;
                 requirementsMet.number = true;
             }
 
-            // Update requirements display
+            // mo ni mo apdit sa requirementsss displayyy ya
             Object.keys(requirementsMet).forEach(req => {
                 const element = requirements.querySelector(`[data-requirement="${req}"]`);
                 if (requirementsMet[req]) {
@@ -530,7 +530,7 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
                 }
             });
 
-            // Update strength bar
+            // mao ni mo Update sa strengthhhh barrr broo
             strengthBar.className = 'password-strength';
             if (strength <= 25) {
                 strengthBar.classList.add('strength-weak');
@@ -569,15 +569,14 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
         confirmPasswordField.addEventListener('input', checkPasswordMatch);
         <?php endif; ?>
 
-        // Remove the problematic form validation that was blocking submission
+        // mao ni maka Removee sa problematiccc formm validationn thatt wass blockinggg submissionnn
         document.querySelector('form').addEventListener('submit', function(e) {
-            // Let the server-side validation handle it
-            // This prevents the JavaScript from blocking form submission
         });
     </script>
 </body>
 
 </html>
+
 
 
 
