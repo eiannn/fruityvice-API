@@ -3,22 +3,22 @@
 Project Overview
 FruitInfo is a comprehensive web application that serves as a digital encyclopedia for fruits. It provides detailed nutritional information, scientific classifications, and organizes fruits into intuitive categories for easy browsing and research purposes.
 
- Core Features
- Access Management
+ #Core Features!!!
+ #Access Management
 Secure Admin Portal: Requires authorized login to access the database
 
 Session Control: Automatic session termination after 30 minutes of inactivity
 
 Activity Monitoring: Tracks user interactions and access patterns
 
- Data Management
+ #Data Management
 API Integration: Connects to FruityVice API for real-time fruit data
 
 Data Redundancy: Implements fallback data when external API is unavailable
 
 Categorical Organization: Groups fruits by biological families and types
 
- Content Navigation
+ #Content Navigation
 HOME: Complete fruit catalog overview
 
 BERRIES: Berry family fruits (Strawberry, Blueberry, Raspberry, etc.)
@@ -32,7 +32,7 @@ STONE FRUITS: Stone fruits (Peach, Plum, Cherry, Apricot, etc.)
 MELONS: Melon varieties (Watermelon, Cantaloupe, etc.)
 
 
-Information Presentation
+#Information Presentation
 Nutritional Analytics: Detailed breakdown of calories, sugar, carbs, protein per 100g
 
 Scientific Taxonomy: Family, order, and genus classifications
@@ -42,21 +42,21 @@ Visual Coding: Color-coded system for different fruit types
 Interactive Interface: Clickable cards for detailed information access
 
 
-Security Implementation
-Session Management: Controlled access duration
+mao Securityyy ang mo Implementa
+Sessionnn na mo Manage: Controlleddd  sa access durationnn ya
 
-Access Monitoring: User activity tracking and logging
+Accessss na mo Monitor ya: sa Userrr na acctivity na mo trackinggg and logginggg ya
 
-Authentication Protocol: Protected administrative access
+othentication Prutocolll: Protectahan ang administrativee na accesss ya
 
-Input Validation: Security measure implementation
+E Inputtt and Valedation: Secureety measureee sa emplementation
 
 
- User Experience Design
-Responsive Architecture: Multi-device compatibility
+ #Mao ni User eexperience Design niya ya!
+Responsive Architectureee: Multi-device compatibility
 
-Professional Interface: Clean, modern design aesthetic
+Professional Interpace: limpyo, moderno na design aestheticc sad 
 
-Interactive Elements: Enhanced user engagement
+Interactiveee na Elemento: ug ge enhanceddd sad ang userr engagementtt ya
 
-Intuitive Navigation: User-friendly category system
+iintuitiveeee Navvv: User-na bot an categoryyy systema ya
