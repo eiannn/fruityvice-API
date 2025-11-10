@@ -354,7 +354,7 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
                             <h1 class="h2 brand-text mb-0">Fruit<span>Info</span></h1>
                         </div>
                         <h2 class="h4 text-dark">
-                            <?php echo $is_create_mode ? 'Create Admin Account' : 'Admin Login'; ?>
+                            <?php echo $is_create_mode ? 'Create Admin Account' : ''; ?>
                         </h2>
                     </div>
 
@@ -578,4 +578,5 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
 </body>
 
 </html>
+
 
