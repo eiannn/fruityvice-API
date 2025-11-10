@@ -1,4 +1,4 @@
-/* ===== PROFESSIONAL NAVIGATION BAR STYLES ===== */
+/* ===== ffROFEeeSSIONAL NAVvv BARrrr ya stayl ===== */
 .nav-container {
     background: #ffffff;
     border-bottom: 1px solid #f0f0f0;
@@ -23,7 +23,7 @@
     height: 70px;
 }
 
-/* Logo Styles */
+/* Lugu Stayles */
 .logo {
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@
     background-clip: text;
 }
 
-/* Navigation Links */
+/* Navvv Leenks */
 .nav-links {
     display: flex;
     list-style: none;
@@ -136,14 +136,14 @@
     border-radius: 50%;
 }
 
-/* Right Side Buttons */
+/* tuo na  siide Boottons ya */
 .nav-buttons {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-/* Search Container */
+/* dire ka maka Seeerch ug Cooontainer ya */
 .search-container {
     position: relative;
 }
@@ -219,7 +219,7 @@
     font-size: 14px;
 }
 
-/* User Menu */
+/* usersss meeenu broo */
 .user-menu .dropdown {
     position: relative;
 }
@@ -313,7 +313,7 @@
     font-size: 13px;
 }
 
-/* Responsive Navigation */
+/* Reeesponseveeee Navvv bro */
 @media (max-width: 1024px) {
     .nav-container nav {
         flex-wrap: wrap;
@@ -416,9 +416,9 @@
     }
 }
 
-/* ===== COMPACT PROFESSIONAL FRUIT CARDS ===== */
+/* ===== COMPAaaac PROFESSeeeONAL FRUITas CARDSss ya ===== */
 
-/* Fruit Cards Grid */
+/* Fruitas Cardsss Griddd bro */
 .fruits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -432,7 +432,7 @@
     margin-bottom: 50px;
 }
 
-/* Compact Fruit Card Design */
+/* Compactttt Fruitas  Carrrd Designnn ya */
 .fruit-card {
     background: linear-gradient(145deg, rgba(35, 35, 35, 0.9), rgba(25, 25, 25, 0.95));
     border-radius: 18px;
@@ -480,7 +480,7 @@
     width: 100%;
 }
 
-/* Card Header - Compact */
+/* Cardddss na ulohan ya - Compactttt bro */
 .card-header {
     background: linear-gradient(135deg, var(--fruit-secondary), rgba(255, 255, 255, 0.03));
     padding: 20px 25px;
@@ -516,12 +516,12 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* Card Body - Compact */
+/* Card na lawas ya - Compactttt */
 .card-body {
     padding: 20px 25px;
 }
 
-/* Nutrition Section - Compact */
+/* Nootritionnn Sectionnn bro - Compacttt */
 .nutrition-section {
     margin-bottom: 20px;
 }
@@ -604,7 +604,7 @@
     font-size: 1rem;
 }
 
-/* Card Footer - Compact */
+/* Carrrrd Foooter ya - Compactttt */
 .card-footer {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -632,7 +632,7 @@
     transform: translateY(-2px);
 }
 
-/* Empty State - Compact */
+/* walay sulod na State ya- Compact tttt*/
 .empty-state {
     text-align: center;
     padding: 70px 25px;
@@ -664,7 +664,7 @@
     font-size: 1.1rem;
 }
 
-/* Error Alert - Compact */
+/* mali na Alerto ya - Compaccc */
 .error-alert {
     background: linear-gradient(135deg, 
         rgba(220, 53, 69, 0.12), 
@@ -748,4 +748,5 @@
     .empty-title {
         font-size: 1.7rem;
     }
+
 }
