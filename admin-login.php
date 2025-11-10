@@ -374,7 +374,7 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
 
                     <form method="POST" class="needs-validation" novalidate>
                         <div class="mb-4">
-                            <label for="email" class="form-label fw-semibold">Admin Email</label>
+                            <label for="email" class="form-label fw-semibold">Email</label>
                             <div class="input-group">
                                 <span class="input-group-text bg-light border-end-0">
                                     <i class="fas fa-envelope text-muted"></i>
@@ -448,7 +448,7 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
                         
                         <small class="text-muted">
                             <i class="fas fa-shield-alt me-1"></i>
-                            Protected by advanced security measures
+                            
                         </small>
                     </div>
                 </div>
@@ -576,4 +576,5 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
         });
     </script>
 </body>
+
 </html>
