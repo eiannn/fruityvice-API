@@ -60,7 +60,7 @@ class LoginSecurity {
         }
         
         try {
-            // Validate inputs
+            // mani mo Validateee sa mga inputss brooo
             if (empty($email) || empty($password) || empty($confirm_password)) {
                 throw new Exception('All fields are required');
             }
@@ -90,14 +90,14 @@ class LoginSecurity {
                 throw new Exception('Password must contain at least one number');
             }
             
-            // Check if email already exists
+            // mao ni mo Checkkk if imong email is naa na brooo
             $stmt = $this->db->prepare("SELECT id FROM admin_users WHERE email = ?");
             $stmt->execute([$email]);
             if ($stmt->fetch()) {
                 throw new Exception('This email is already registered. Please use a different email or login.');
             }
             
-            // Hash password and create account
+            // naka hash passwordd nani ya ug mao sad dire maka createe ka ug accounttt brooo
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
             $stmt = $this->db->prepare("INSERT INTO admin_users (email, password, created_at) VALUES (?, ?, NOW())");
             
@@ -165,34 +165,34 @@ $security = new LoginSecurity($pdo);
 $error = '';
 $success = '';
 
-// Check if we're in login or create account mode
+// mao ni mo Checkkk bro iff we'reee innn loginnn orrr createeee accounttt modeee bruhhh
 $is_create_mode = isset($_GET['mode']) && $_GET['mode'] === 'create';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         if ($is_create_mode) {
-            // Handle account creation
+            // mao ni mo Handlee sa accounnnt creationnnn broo 
             $email = $security->sanitizeInput($_POST['email'] ?? '');
             $password = $_POST['password'] ?? '';
             $confirm_password = $_POST['confirm_password'] ?? '';
             
-            // Debug: Check what values are received
+            // DDDebug: e Checkk kng unsa na values ang na receiveddd broo
             error_log("Create Account - Email: $email, Password length: " . strlen($password) . ", Confirm length: " . strlen($confirm_password));
             
             $result = $security->createAccount($email, $password, $confirm_password);
             
             if ($result['success']) {
                 $success = $result['message'];
-                // Auto-fill email and switch to login mode after successful creation
+                // mo Automatic ang email ya ug switchhh nigg human nimo ug loginnn modeee afterrrr ma successfulllll creationnnn brooo
                 $_SESSION['last_created_email'] = $result['email'];
                 $is_create_mode = false;
             }
         } else {
-            // Handle login
+            // mao ni mo Handleee ug loginnnn ya
             $email = $security->sanitizeInput($_POST['email'] ?? '');
             $password = $_POST['password'] ?? '';
             
-            // Debug: Check what values are received
+            // (Debugggg) mao ni mo Checkkkk bro kng unsa na valuesss ang na receiveddd yaaa
             error_log("Login Attempt - Email: $email, Password length: " . strlen($password));
             
             if (!$security->checkLoginAttempts()) {
@@ -208,7 +208,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['admin_id'] = $user['id'];
                 $_SESSION['login_time'] = time();
                 
-                // Clear any temporary session data
+                // ma Clearrrr ang anyy temporaryyyy sessionnn dataaaa
                 unset($_SESSION['last_created_email']);
                 
                 header("Location: index.php");
@@ -223,7 +223,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Auto-switch to login mode if user just created account
+// ma Autoooo-switch ni bro sa login modee if ang user justttt createddd accountt broooo
 if (isset($_SESSION['last_created_email']) && !$is_create_mode) {
     $preset_email = $_SESSION['last_created_email'];
 } else {
@@ -458,7 +458,7 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Password visibility toggle
+        // mao ni Passworddd visibilityyyy toggleeee ya
         document.querySelectorAll('.password-toggle').forEach(button => {
             button.addEventListener('click', function() {
                 const targetId = this.getAttribute('data-target');
@@ -478,7 +478,7 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
         });
 
         <?php if ($is_create_mode): ?>
-        // Password strength checker
+        // mao ni PPassword strengthhh checkerrr ya
         const passwordField = document.getElementById('password');
         const confirmPasswordField = document.getElementById('confirm_password');
         const strengthBar = document.getElementById('password-strength');
@@ -578,6 +578,7 @@ if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true
 </body>
 
 </html>
+
 
 
 
