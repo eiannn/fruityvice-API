@@ -26,7 +26,7 @@ if (isset($_GET['logout'])) {
     exit;
 }
 
-// FRUIT DATA LOGIC
+// mga logic
 $pageTitle = "All Fruits";
 $searchQuery = "";
 $fruits = [];
@@ -37,7 +37,7 @@ $showOnlySelected = isset($_GET['showOnly']);
 function fetchAllFruits() {
     $url = "https://www.fruityvice.com/api/fruit/all";
     
-    // Add error logging to see what's happening
+    // makita ang error dire 
     error_log("Attempting to fetch fruits from: " . $url);
     
     $ch = curl_init();
@@ -53,7 +53,7 @@ function fetchAllFruits() {
     $curlError = curl_error($ch);
     curl_close($ch);
     
-    // Log the response details
+    // makita dire a ang login responceeee bro
     error_log("HTTP Code: " . $httpCode);
     error_log("CURL Error: " . $curlError);
     error_log("Response length: " . strlen($response));
@@ -122,7 +122,7 @@ function getFruitColor($fruitName) {
 $category = $_GET['category'] ?? 'all';
 $searchQuery = $_GET['search'] ?? '';
 
-// Try to fetch data with better error handling
+// betterrrr errorrrrr handlinggg bro
 try {
     error_log("Starting fruit data fetch...");
     $allFruits = fetchAllFruits();
@@ -204,10 +204,10 @@ try {
     $error = "Unable to load fruit data: " . $e->getMessage();
     $fruits = [];
     
-    // Log the detailed error
+    // Logggggggg ttthe detailedddddddd errorrrrrrrr
     error_log("Fruit data error: " . $e->getMessage());
     
-    // Provide more user-friendly error message
+    // Provideeeee moreeeee useeeeer-friendlyyyyyy errorrrr messageee
     if (strpos($e->getMessage(), 'connect') !== false) {
         $error = "Unable to connect to the fruit database. Please check your internet connection and try again.";
     } elseif (strpos($e->getMessage(), 'HTTP') !== false) {
@@ -572,4 +572,5 @@ error_log("Final fruits count: " . (is_array($fruits) ? count($fruits) : '0'));
         });
     </script>
 </body>
+
 </html>
